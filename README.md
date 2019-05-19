@@ -1,7 +1,7 @@
-#Money Transfer App
-#####Sample REST application for transferring money between accounts
+# Money Transfer App
+##### Sample REST application for transferring money between accounts
 
-##API
+## API
 get all Accounts
 ```
 curl -X GET \
@@ -26,16 +26,16 @@ curl -X POST \
 }'
 ```
 
-##Run App
+## Run App
 By default app runs on port 8080
-####With JAR
+#### With JAR
 ```java -jar MoneyTransferTest-1.0-SNAPSHOT.jar```
 
 or to change port
 
 ```java -jar MoneyTransferTest-1.0-SNAPSHOT.jar --port 8081```
 
-####With Gradle
+#### With Gradle
 ```./gradlew runServer```
 
 or to change port
