@@ -14,7 +14,7 @@ curl -X GET \
   http://host:port/accounts/:id
 ```
 ##
-transfer money between accounts
+transfer money between Accounts
 ```
 curl -X POST \
   http://host:port/accounts/transfer \

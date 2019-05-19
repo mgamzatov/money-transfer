@@ -1,5 +1,6 @@
 package ru.magomed.gamzatov.money.transfer.application.controller
 
+import com.fasterxml.jackson.module.kotlin.readValue
 import ru.magomed.gamzatov.money.transfer.application.model.Transfer
 import ru.magomed.gamzatov.money.transfer.helper.SparkController
 import ru.magomed.gamzatov.money.transfer.helper.jsonTransformer
@@ -30,7 +31,7 @@ class AccountController {
     }
 
     private fun transfer() = Route { req, _ ->
-        val transfer = mapper.readValue(req.body(), Transfer::class.java)
+        val transfer = mapper.readValue<Transfer>(req.body())
         TransferService.transfer(transfer)
         """{"message": "Success"}"""
     }
