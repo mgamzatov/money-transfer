@@ -1,0 +1,13 @@
+.gradle
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+*.iml
+out/
+.idea/
+*.swp
+*.ipr
+*.iws
+*.log
+*.log.*
