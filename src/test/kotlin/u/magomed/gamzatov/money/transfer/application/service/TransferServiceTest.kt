@@ -103,7 +103,7 @@ class TransferServiceTest {
         val latch = CountDownLatch(10)
         val barrier = CyclicBarrier(10)
 
-        (1..5).forEach {
+        repeat(5) {
             Thread {
                 barrier.await()
                 TransferService.transfer(Transfer(acc1.id, acc2.id, BigDecimal.valueOf(2)))
