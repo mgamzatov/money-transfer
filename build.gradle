@@ -27,6 +27,10 @@ dependencies {
     testImplementation "io.mockk:mockk:1.9.3.kotlin12"
 }
 
+test {
+    useJUnitPlatform()
+}
+
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
