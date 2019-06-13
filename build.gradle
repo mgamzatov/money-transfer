@@ -39,11 +39,10 @@ compileTestKotlin {
 }
 
 task runServer(type: JavaExec) {
-    group = 'ru.magomed.gamzatova'
+    group = 'ru.magomed.gamzatov'
     main = "ru.magomed.gamzatov.money.transfer.MainKt"
     classpath = sourceSets.main.runtimeClasspath
     if (project.hasProperty('port')){
-        println port
         args = ["--port", port]
     }
     dependsOn(build)
